@@ -1,12 +1,12 @@
 # revscriptsys-autoatk
 
-Necessita:
+Goals:
 - Pegar target da criatura mais próxima na tela
 - Seguir
 - Manter distância ao seguir (contando distancia=0 para kina)
 - Quando a criatura morrer, repetir
 
-Se possível:
+Extra Goals:
 - Pegar loot após criatura morrer
 
 Talkactions:
