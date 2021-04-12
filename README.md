@@ -1,4 +1,6 @@
 # revscriptsys-autoatk
+Post original: https://forums.otserv.com.br/index.php?/forums/topic/169943-revscriptsysotbr-auto-attack-monsters-talkaction/
+
 
 Goals:
 - Pegar target da criatura mais próxima na tela
