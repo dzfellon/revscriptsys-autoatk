@@ -3,7 +3,7 @@
 Goals:
 - Pegar target da criatura mais próxima na tela
 - Seguir
-- Manter distância ao seguir (contando distancia=0 para kina)
+- Manter distância especifica ao seguir
 - Quando a criatura morrer, repetir
 
 Extra Goals:
