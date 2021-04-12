@@ -1,12 +1,16 @@
 local autoatk = TalkAction("!autoatk")
 
-local radiusX = 20
-local radiusY = 20
+local radiusX1 = 20
+local radiusY1 = 20
 local areapos = getCreaturePosition(cid)
 local spectator = Game.getSpectators(radiusX, radiusY, false, false, areapos)
 
--- local monster = THING_TYPE_MONSTER
-
+local monster = THING_TYPE_MONSTER
+--[[
+function onTargetCreature(creature, target)
+return doChallengeCreature(creature, target)
+end
+]]
 function autoatk.onSay(player, words, param)
 local split = param:split(",")
 	
@@ -14,7 +18,9 @@ local split = param:split(",")
     if action == "face2face" then
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Auto attack is activated on mode FACE2FACE!")
 		
-		if monster ~= nil then
+		if monster ~= nil
+		else if spectator => 1
+		then
 			local targets = monster:getTargetList()
 			local currentTarget = monster:getTarget()
 			if not currentTarget then
