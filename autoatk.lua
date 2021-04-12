@@ -1,7 +1,7 @@
 local autoatk = TalkAction("!autoatk")
 
-local radiusX1 = 20
-local radiusY1 = 20
+local radiusX = 20
+local radiusY = 20
 
 local monster = THING_TYPE_MONSTER
 
