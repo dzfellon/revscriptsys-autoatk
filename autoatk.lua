@@ -13,11 +13,6 @@ local split = param:split(",")
 	local action = split[1]
     if action == "face2face" then
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Auto attack is activated on mode FACE2FACE!")
-	
-		function onTargetCreature(creature, target)
-		return doChallengeCreature(creature, target)
-		end
-	
 		
 		if monster ~= nil then
 			local targets = monster:getTargetList()
